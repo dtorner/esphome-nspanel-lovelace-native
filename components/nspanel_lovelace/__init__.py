@@ -269,7 +269,7 @@ SCHEMA_ICON = cv.Any(
 )
 
 SCHEMA_STATUS_ICON = cv.Schema({
-    cv.Optional(CONF_ENTITY_ID): valid_entity_id(['sensor','binary_sensor','light']),
+    cv.Optional(CONF_ENTITY_ID): valid_entity_id(['sensor','binary_sensor','light','alarm_control_panel']),
     cv.Optional(CONF_ICON): SCHEMA_ICON,
     cv.Optional(CONF_SCREENSAVER_STATUS_ICON_ALT_FONT): cv.boolean,
 })
